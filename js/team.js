@@ -12,9 +12,19 @@ const owners = [
     {
         "id": "327086322466422784",
         "post": "Tulajdonos",
-        "GHURL": "",
+        "TTVURL": "https://www.twitch.tv/sebyyttv",
         "InstaURL": "",
         "YTURL": "https://www.youtube.com/channel/UCg1kvApSkFmqOoVMt6ZUe3w"
+    }
+]
+
+[
+    {
+        "id": "449255636132167680",
+        "post": "Vezéradmin",
+        "TTVURL": "https://www.twitch.tv/royalstreams_",
+        "InstaURL": "",
+        "YTURL": "https://www.youtube.com/channel/UCD0sJwEAxBNcbMsHk7rKyVw"
     }
 ]
 
@@ -29,7 +39,7 @@ for (let indexOne = 0; indexOne < owners.length; indexOne++) {
                 }, 1000);
             }
 
-            const ownerList = "<div id='trigger' class='card' style='margin: 15px;'><div class='banner'><img src='" + output.url + "'></div></br></br></br></br><h2 class='name'>" + output.username + "</h2><div class='title'><h1 id='trigger2' style='font-size: 26px; color: #000000;'>" + elementOwners.post + "</h2></div><div class='actions'><div class='follow-btn' style='margin-bottom: 5px;'><a href='" + elementOwners.GHURL + "' target='_blank'><button style='color: #000000;'>GitHub</button></a></div><div class='follow-btn'><a href='" + elementOwners.YTURL + "' target='_blank'><button style='color: #000000;'>YouTube</button></a></div></div></div>"
+            const ownerList = "<div id='trigger' class='card' style='margin: 15px;'><div class='banner'><img src='" + output.url + "'></div></br></br></br></br><h2 class='name'>" + output.username + "</h2><div class='title'><h1 id='trigger2' style='font-size: 26px; color: #000000;'>" + elementOwners.post + "</h2></div><div class='actions'><div class='follow-btn' style='margin-bottom: 5px;'><a href='" + elementOwners.TTVURL + "' target='_blank'><button style='color: #000000;'>Twitch</button></a></div><div class='follow-btn'><a href='" + elementOwners.YTURL + "' target='_blank'><button style='color: #000000;'>YouTube</button></a></div></div></div>"
             boxOwners.innerHTML += ownerList;
         });
 }
