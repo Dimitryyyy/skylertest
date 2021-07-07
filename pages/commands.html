@@ -64,7 +64,7 @@
 
     <div class="jumbotron text-center bg-transparent">
         <h1 class="commandstitle">Parancsok</h1>
-        <p class="lead commandssub">Nézd meg a parancslistát!/p>
+        <p class="lead commandssub">Az összes parancsot megtalálod ezen az oldalon!</p>
         <hr>
         <input id="myInput" type="text" class="searchbox" placeholder="Search">
         <br>
@@ -84,30 +84,132 @@
                 <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
                 <h4 style="color: #cccccc;">Használat:</h4>
                 <p>s/help</p>
-                <h4 style="color: #cccccc;">Példa:</h4>
-                <p>s/help other</p>
             </div>
             <br>
             <br>
-            <button type="button" class="collapsible">s/balance<span> - Check the commands list</span></button>
+            <button type="button" class="collapsible">s/balance<span> - Egyenleg megtekintése</span></button>
             <div class="content">
                 <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
                 <p style="color: rgb(116, 67, 253);">Nincs</p>
                 <h4 style="color: #cccccc;">Használat:</h4>
-                <p>Hhelp</p>
-                <h4 style="color: #cccccc;">Examples:</h4>
-                <p>Hhelp setprefix</p>
+                <p>s/balance [@említés]</p>
             </div>
             <br>
             <br>
-            <button type="button" class="collapsible">s/crime<span> - add a reaction role</span></button>
+            <button type="button" class="collapsible">s/crime<span> - Véletlenszerű bolt kirablása.</span></button>
             <div class="content">
                 <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
                 <p style="color: rgb(116, 67, 253);">Nincs.</p>
                 <h4 style="color: #cccccc;">Használat:</h4>
                 <p>s/crime</p>
-                <h4 style="color: #cccccc;">Példa:</h4>
-                <p>s/crime</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/work<span> - Dolgozás.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/work</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/pay<span> - Átutalás bankon keresztül.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/pay [@említés] [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/setcurrency<span> - Pénznem beállítása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/setcurrency [emoji/szöveg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/resetcurrency<span> - Pénznem visszaállítása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/resetcurrency</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/farm<span> - Dolgozás a farmon.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/farm</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/inventory<span> - Megvásárolt tárgyak listája.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/inventory</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/buyitem<span> - Tárgy megvásárlása a boltból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/buyitem[szám]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/deposit<span> - Pénz bankba rakása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/deposit [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/withdraw<span> - Pénz kivétele a bankból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/withdraw [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/rob<span> - Felhasználó kirablása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/rob [@említés]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/additem<span> - Tárgy hozzáadása a bolthoz.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/additem [név] [ár] [@rang]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/removeitem<span> - Tárgy törlése a boltból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/removeitem[szám]</p>
             </div>
         </div>
     </div>
