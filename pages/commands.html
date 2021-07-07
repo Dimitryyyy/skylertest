@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../assets/favicon.png">
-    <title>Hbot</title>
+    <title>Skyler - Parancsok</title>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index">Kezdőlap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#/">Commands</a>
+                        <a class="nav-link" aria-current="page" href="#/">Parancsok</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./team.html">Staff</a>
+                        <a class="nav-link" href="./team">Vezetőség</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
@@ -40,26 +40,21 @@
                             Links
                         </a>
                         <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted font-weight-bold" href="" target="_blank">Invite
-                                    Bot</a>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/oauth2/authorize?client_id=629368281513328642&permissions=8&scope=bot" target="_blank">Meghívás</a>
                             </li>
-                            <li><a class="dropdown-item text-muted font-weight-bold" href="" target="_blank">Support
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/invite/JfRbAU7" target="_blank">Support
                                     Server</a></li>
-                            <li><a class="dropdown-item text-muted font-weight-bold" href="./faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="./faq">FAQ</a></li>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item text-muted font-weight-bold"
-                                    href="https://github.com/Hadi-Koubeissi" target="_blank">Official Github</a></li>
-                            <li><a class="dropdown-item text-muted font-weight-bold" href="">View
-                                    Documentation</a></li>
                         </ul>
                     </li>
                 </ul>
                 <div class="d-flex ml-auto" id="headerlogin">
                     <li class="nav-item" style="list-style: none;">
-                        <a class="nav-link btn btn-outline-secondary login" href="/login">Login</a>
+                        <a class="nav-link btn btn-outline-secondary login" href="/login">Bejelentkezés</a>
                     </li>
                 </div>
             </div>
@@ -68,8 +63,8 @@
     </div>
 
     <div class="jumbotron text-center bg-transparent">
-        <h1 class="commandstitle">Commands</h1>
-        <p class="lead commandssub">View the commands for Hbot.</p>
+        <h1 class="commandstitle">Parancsok</h1>
+        <p class="lead commandssub">Nézd meg a parancslistát!/p>
         <hr>
         <input id="myInput" type="text" class="searchbox" placeholder="Search">
         <br>
@@ -83,36 +78,36 @@
         <br>
         <div id="myCmd">
             <br>
-            <button type="button" class="collapsible">setprefix<span> - Check/Changes bot's prefix</span></button>
+            <button type="button" class="collapsible">help<span> - Parancslista megtekintése.</span></button>
             <div class="content">
-                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
-                <p style="color: aqua;">Administration</p>
-                <h4 style="color: #cccccc;">Usage:</h4>
-                <p>Hprefix</p>
-                <h4 style="color: #cccccc;">Examples:</h4>
-                <p>Hprefix !</p>
+                <h4 style="color: rgb(169, 247, 247);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/help</p>
+                <h4 style="color: #cccccc;">Példa:</h4>
+                <p>s/help other</p>
             </div>
             <br>
             <br>
-            <button type="button" class="collapsible">help<span> - Check the commands list</span></button>
+            <button type="button" class="collapsible">s/balance<span> - Check the commands list</span></button>
             <div class="content">
-                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
-                <p style="color: rgb(19, 182, 160);">General</p>
-                <h4 style="color: #cccccc;">Usage:</h4>
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
                 <p>Hhelp</p>
                 <h4 style="color: #cccccc;">Examples:</h4>
                 <p>Hhelp setprefix</p>
             </div>
             <br>
             <br>
-            <button type="button" class="collapsible">reaction role<span> - add a reaction role</span></button>
+            <button type="button" class="collapsible">s/crime<span> - add a reaction role</span></button>
             <div class="content">
-                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
-                <p style="color: rgb(242, 44, 232);">Premium</p>
-                <h4 style="color: #cccccc;">Usage:</h4>
-                <p>Hrr</p>
-                <h4 style="color: #cccccc;">Examples:</h4>
-                <p>Hrr {messageID} {roleID} {emojiID}</p>
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs.</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/crime</p>
+                <h4 style="color: #cccccc;">Példa:</h4>
+                <p>s/crime</p>
             </div>
         </div>
     </div>
